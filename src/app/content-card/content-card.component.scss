@@ -1,0 +1,25 @@
+:host{
+  width: 600px;
+  display: block;
+  margin: 30px auto;
+  border: 2px darkred double;
+  //font-family: "Bell Gothic Std Black";
+}
+
+:host.is-last{
+  border: 2px black solid;
+}
+
+.main-image{
+  width: 600px;
+}
+
+.title{
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.tag{
+  display: inline-block;
+}
