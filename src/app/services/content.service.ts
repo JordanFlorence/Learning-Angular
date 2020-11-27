@@ -3,6 +3,7 @@ import {Content} from '../helper-files/content-interface';
 import {CONTENTLIST} from '../helper-files/ContentDB';
 import {Observable, of} from 'rxjs';
 import {MessageService} from '../message.service';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 
 
 @Injectable({
@@ -10,13 +11,19 @@ import {MessageService} from '../message.service';
 })
 export class ContentService {
 
-  constructor(private messageService: MessageService) { }
-  getContentList(): Content[]{ // Synchronous
-    return CONTENTLIST;
+  private httpOptions = {
+    headers: new HttpHeaders({'Content-Type': 'application/json'})
+  };
+
+  constructor(private http: HttpClient) { }
+  getContentList(): Observable<Content[]> {
+    return this.http.get<Content[]>('api/content');
   }
 
-  getContentListObs(): Observable<Content[]> { // Asynchronous
-    this.messageService.add('Content Retrieved!');
-    return of(CONTENTLIST);
+  insertContent(content: Content): Observable<Content>{
+    return this.http.post<Content>('api/content', content, this.httpOptions);
+  }
+  updateContent(content: Content): Observable<any>{
+    return this.http.put<Content>('api/content', content, this.httpOptions);
   }
 }
