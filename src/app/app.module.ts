@@ -17,6 +17,8 @@ import {MatSliderModule} from '@angular/material/slider';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInput, MatInputModule} from '@angular/material/input';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatDivider, MatDividerModule} from '@angular/material/divider';
+import {MatRippleModule} from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatSliderModule,
     MatButtonModule,
     MatInputModule,
-    MatDialogModule
+    MatDialogModule,
+    MatDividerModule,
+    MatRippleModule
     ],
   providers: [],
   entryComponents: [InsertContentDialog],
