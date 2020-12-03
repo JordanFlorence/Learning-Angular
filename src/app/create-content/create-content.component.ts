@@ -29,7 +29,9 @@ export class CreateContentComponent implements OnInit {
     });
     contentDialogRef.afterClosed().subscribe(newContentFromDialog => {
       this.newContent = newContentFromDialog;
-      this.insertContent();
+      if (this.newContent) {
+        this.insertContent();
+      }
     });
 
   }
@@ -55,7 +57,7 @@ export class CreateContentComponent implements OnInit {
 
 @Component({
   selector: 'app-create-content-dialog',
-  templateUrl: 'create-content.dialog.component.html',
+  templateUrl: 'create-content-dialog.component.html',
 })
 export class InsertContentDialog {
   newContent: any;

@@ -1,4 +1,4 @@
-<app-create-component (newContentEvent)="addToList($event)" (updateContentEvent)="updateList($event)"></app-create-component>
+<app-create-content (newContentEvent)="addToList($event)" (updateContentEvent)="updateList($event)"></app-create-content>
 
 <input type="text" [(ngModel)]="title" />
 <button (click)="exists()">Check if it exists</button>
