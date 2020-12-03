@@ -1,0 +1,33 @@
+<h1 mat-dialog-title>Add Content</h1>
+<div mat-dialog-content>
+
+  <mat-form-field>
+    <mat-label>Id:</mat-label>
+    <input matInput [(ngModel)]="newContent.id" /><br />
+  </mat-form-field><br>
+
+  <mat-form-field>
+    <mat-label>Title:</mat-label>
+    <input matInput [(ngModel)]="newContent.title" /><br />
+  </mat-form-field><br>
+
+  <mat-form-field>
+    <mat-label>Body:</mat-label>
+    <input matInput [(ngModel)]="newContent.body" /><br />
+  </mat-form-field><br>
+
+  <mat-form-field>
+    <mat-label>Author:</mat-label>
+    <input matInput [(ngModel)]="newContent.author" /><br />
+  </mat-form-field><br>
+
+  <mat-form-field>
+    <mat-label>Image url:</mat-label>
+    <input matInput [(ngModel)]="newContent.imageUrl" /><br /><br />
+  </mat-form-field><br>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="newContent" cdkFocusInitial>Ok</button>
+</div>
