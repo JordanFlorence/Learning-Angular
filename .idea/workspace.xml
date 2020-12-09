@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="666a5dcf-1a66-45ce-b1b8-23bc8c2fcc70" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/learning-angular/src/app/content-detail/content-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning-angular/src/app/content-detail/content-detail.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning-angular/src/app/content-detail/content-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning-angular/src/app/content-detail/content-detail.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning-angular" beforeDir="false" afterPath="$PROJECT_DIR$/learning-angular" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning-angular/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning-angular/src/app/app.component.html" afterDir="false" />
@@ -29,12 +33,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/learning-angular" />
   </component>
   <component name="ProjectId" id="1kU8WWHYDbtqoK3kzmKyHK2VRPr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -71,6 +78,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606518749225">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -96,6 +106,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606519989085" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607483412366">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607483412366" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607483311855">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607483311855" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1606954394102">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
