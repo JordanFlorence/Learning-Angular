@@ -11,6 +11,7 @@
       <change beforePath="$PROJECT_DIR$/learning-angular/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning-angular/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning-angular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/learning-angular/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning-angular/src/app/content-card/content-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning-angular/src/app/content-card/content-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning-angular/src/app/content-card/content-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/learning-angular/src/app/content-card/content-card.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning-angular/src/app/content-list/content-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning-angular/src/app/content-list/content-list.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning-angular/src/app/services/content.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/learning-angular/src/app/services/content.service.ts" afterDir="false" />
     </list>
@@ -72,6 +73,7 @@
       <workItem from="1606513916988" duration="6067000" />
       <workItem from="1606949418856" duration="15558000" />
       <workItem from="1607473456016" duration="6356000" />
+      <workItem from="1607552477266" duration="4373000" />
     </task>
     <servers />
   </component>
