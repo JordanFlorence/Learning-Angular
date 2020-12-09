@@ -11,7 +11,14 @@ import { MessagesComponent } from './messages/messages.component';
 import {HttpClientModule} from '@angular/common/http';
 import {HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api';
 import {InMemoryDataService} from './services/in-memory-data.service';
-import { CreateComponentComponent } from './create-component/create-component.component';
+import {CreateContentComponent, InsertContentDialog} from './create-content/create-content.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSliderModule} from '@angular/material/slider';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInput, MatInputModule} from '@angular/material/input';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatDivider, MatDividerModule} from '@angular/material/divider';
+import {MatRippleModule} from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -21,7 +28,8 @@ import { CreateComponentComponent } from './create-component/create-component.co
     TagFilterPipe,
     HoverStyleDirective,
     MessagesComponent,
-    CreateComponentComponent
+    CreateContentComponent,
+    InsertContentDialog
   ],
   imports: [
     BrowserModule,
@@ -29,9 +37,17 @@ import { CreateComponentComponent } from './create-component/create-component.co
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false,
-        delay: 1000 })
+        delay: 1000 }),
+    BrowserAnimationsModule,
+    MatSliderModule,
+    MatButtonModule,
+    MatInputModule,
+    MatDialogModule,
+    MatDividerModule,
+    MatRippleModule
     ],
   providers: [],
+  entryComponents: [InsertContentDialog],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
