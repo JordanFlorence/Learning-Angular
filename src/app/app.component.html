@@ -1,7 +1,5 @@
-<mat-slider min="1" max="100" step="1" value="1"></mat-slider>
-<br><br>
-
-<!--<app-content-list *ngFor="let specificContent of (contentList | tagFilter: 'action'); last as isLast" [content]="specificContent" [class.is-last]="isLast"></app-content-list>-->
-
-<app-content-list></app-content-list>
-<app-messages></app-messages>
+<a routerLink="content" routerLinkActive="active">Content List</a><br>
+<a routerLink="content/2" routerLinkActive="active">No longer the answer to the universe and everything</a><br>
+<a routerLink="thiswillnotwork" routerLinkActive="active">Invalid page link</a><br>
+<router-outlet></router-outlet>
+<router-outlet></router-outlet>

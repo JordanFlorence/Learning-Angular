@@ -1,18 +1,10 @@
 <div mat-ripple matRippleColor="white">
 <div class="content-{{content.id}}">
   <div class="title" appHoverStyle="underline">Title: {{content.title}}</div>
-  <mat-divider></mat-divider>
-  <div class="author">Author: {{content.author}}</div>
-  <div class="body">Body: {{content.body}}</div>
-  <div class="type" *ngIf="content.type">Type: {{content.type}}</div>
-  <mat-divider></mat-divider>
-  <p>Tags:</p>
-  <div class="tag" *ngFor="let tag of content.tags" appHoverStyle="bold"> {{ tag }}, </div>
-  <mat-divider></mat-divider>
   <img class="main-image" src="{{content.imageUrl}}" *ngIf="content.imageUrl; else noImage" (click)="myFunction()">
-
   <ng-template #noImage>
     <img class="main-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/LetterX.svg/1200px-LetterX.svg.png" (click)="myFunction()">
   </ng-template>
+  <a [routerLink]="['/content',content.id]"routerLinkActive="active">Content Detail</a><br>
 </div>
 </div>

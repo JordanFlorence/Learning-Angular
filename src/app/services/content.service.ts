@@ -16,6 +16,10 @@ export class ContentService {
   };
 
   constructor(private http: HttpClient) { }
+  getContent(id: number): Observable<Content> {
+    return this.http.get<Content>('api/fred/' + id);
+  }
+
   getContentList(): Observable<Content[]> {
     return this.http.get<Content[]>('api/content');
   }
@@ -26,4 +30,5 @@ export class ContentService {
   updateContent(content: Content): Observable<any>{
     return this.http.put<Content>('api/content', content, this.httpOptions);
   }
+
 }

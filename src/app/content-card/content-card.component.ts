@@ -9,7 +9,7 @@ import {Content} from '../helper-files/content-interface';
   styleUrls: ['./content-card.component.scss']
 })
 export class ContentCardComponent implements OnInit {
-  @Input() content: Content
+  @Input() content: Content;
   constructor() {
   }
   ngOnInit(): void {

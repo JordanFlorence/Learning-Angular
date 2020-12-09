@@ -1,13 +1,5 @@
 <app-create-content (newContentEvent)="addToList($event)" (updateContentEvent)="updateList($event)"></app-create-content>
-
 <input type="text" [(ngModel)]="title" />
 <button (click)="exists()">Check if it exists</button>
-<!--<h1>Art</h1>-->
-<!--<app-content-card class="art" *ngFor="let item of (contentList | tagFilter: 'art')" [content]="item"></app-content-card>-->
 
-<!--<h1>Games</h1>-->
-<!--<app-content-card class="game" *ngFor="let item of (contentList | tagFilter: 'game')" [content]="item"></app-content-card>-->
-
-<!--<h1>Movie</h1>-->
-<!--<app-content-card class="movie" *ngFor="let item of (contentList | tagFilter: 'movie')" [content]="item"></app-content-card>-->
 <app-content-card class="art" *ngFor="let item of (contentList)" [content]="item"></app-content-card>

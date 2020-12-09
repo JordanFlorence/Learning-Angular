@@ -19,6 +19,9 @@ import {MatInput, MatInputModule} from '@angular/material/input';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatDivider, MatDividerModule} from '@angular/material/divider';
 import {MatRippleModule} from '@angular/material/core';
+import { ContentDetailComponent } from './content-detail/content-detail.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,9 @@ import {MatRippleModule} from '@angular/material/core';
     HoverStyleDirective,
     MessagesComponent,
     CreateContentComponent,
-    InsertContentDialog
+    InsertContentDialog,
+    ContentDetailComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +49,12 @@ import {MatRippleModule} from '@angular/material/core';
     MatInputModule,
     MatDialogModule,
     MatDividerModule,
-    MatRippleModule
+    MatRippleModule,
+    RouterModule.forRoot([
+      { path: 'content/:id', component: ContentDetailComponent },
+      { path: 'content', component: ContentListComponent },
+      { path: '**', component: NotFoundComponent }
+    ])
     ],
   providers: [],
   entryComponents: [InsertContentDialog],
