@@ -17,7 +17,7 @@ export class ContentService {
 
   constructor(private http: HttpClient) { }
   getContent(id: number): Observable<Content> {
-    return this.http.get<Content>('api/fred/' + id);
+    return this.http.get<Content>('api/content/' + id);
   }
 
   getContentList(): Observable<Content[]> {
