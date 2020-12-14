@@ -24,6 +24,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import {RouterModule} from '@angular/router';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { environment } from '../environments/environment';
     MatDialogModule,
     MatDividerModule,
     MatRippleModule,
+    MatSnackBarModule,
     RouterModule.forRoot([
       { path: 'content/:id', component: ContentDetailComponent },
       { path: 'content', component: ContentListComponent },
